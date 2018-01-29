@@ -1,0 +1,414 @@
+/* * {
+            border: solid 1px black;
+            box-sizing: border-box;
+        } */
+
+        html,
+        body {
+            height: 100%;
+        }
+
+        body {
+            background: #fff;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+        .header{
+            margin-right: auto;
+            margin-left: auto;
+            width: 100%;
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+        .logo{
+            background-image: url('../img/Olife-all.png');
+            width: 300px;
+            height: 44px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            position: fixed;
+
+        }
+
+        .navbar{
+            min-height: 60px;
+            padding: 0;
+        }
+        #navbarNav {
+            height: 35px;
+            width: 100%;
+            /* 字母大寫 */
+            margin-bottom: 20px;
+            box-sizing: border-box;
+            text-align: center;
+            z-index: 1999;
+            font-size: 16px !important;
+            position: fixed;
+        }
+
+        #navbarNav .navbar-nav {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            /* margin-left: auto;
+            margin-right: auto; */
+        }
+
+        #navbarNav .navbar-nav>li {
+            display: inline-block;
+            position: relative;
+            vertical-align: top;
+            z-index: 1;
+            background-image: none;
+        }
+
+        #navbarNav .navbar-nav>li>a {
+            text-decoration: none;
+            padding: 10px 5px;
+            margin: 10px;
+        }
+
+        ul {
+            display: block;
+        }
+        .swiper-container {
+            width: 100%;
+            height: 720px;
+            position: relative;
+            left: 0;
+            top: 0;
+        }
+
+        .swiper-slide {
+            /* background-position: center; */
+            background-size: cover;
+            width: 100%;
+
+        }
+
+        .swiper_img1 {
+            background-image: url('../img/hover1.jpg');
+            background-position: 70% top;
+        }
+
+        .swiper_img2 {
+            background-image: url("../img/hover2.jpg");
+            background-position: 80% top;
+        }
+
+        .swiper_img3 {
+            background-image: url("../img/hover3-1.jpg");
+            background-position: 80% 50%;
+        }
+
+        .swiper-button-next,
+        .swiper-container-rtl .swiper-button-prev {
+            background: none;
+            color: lightgray;
+        }
+
+        .swiper-button-prev,
+        .swiper-container-rtl .swiper-button-next {
+            background: none;
+            color: lightgray;
+        }
+
+        .show_box {
+            width: 100%;
+            max-width: 730px;
+            min-height: 600px;
+            position: relative;
+            margin: auto;
+            margin-top: 50px;
+        }
+
+        .mob_style {
+            position: relative;
+            width: 365px;
+        }
+
+        .the_mobile {
+            width: 365px;
+            height: 550px;
+            display: block;
+            background: url('../img/mobile04.png');
+            background-size: contain;
+            padding-top: 60px;
+            margin: 0;
+            position: absolute;
+            background-repeat: no-repeat;
+        }
+
+        .mob_browser {
+            width: 260px;
+            height: 420px;
+            display: block;
+            margin: 0 8%;
+            background-image: url('../img/news.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .arr_btn {
+            position: absolute;
+            top: 40%;
+            right: 0;
+            margin: 0;
+        }
+
+        .mob_info {
+            width: 365px;
+            position: absolute;
+            right: 0;
+            padding: 50px 0 30px 0;
+            text-align: center;
+        }
+
+        .mob_info>h3 {
+            padding: 50px 0 30px 0;
+            line-height: 36px;
+            font-size: 22px;
+            font-weight: normal;
+        }
+
+        .QRcode_img {
+            width: 200px;
+            height: 200px;
+            margin: 0 auto;
+        }
+
+        .reviews {
+            background-size: cover;
+            position: relative;
+            background-image: url('../img/bamboo-bacc01.jpg');
+            background-repeat: no-repeat;
+            color: #444444;
+            background-position: center;
+            font-weight: bolder;
+            line-height: 36px;
+        }
+        .row_img1 {
+            background-image: url('../img/pic01.png');
+            background-size: cover;
+            height: 300px;
+        }
+
+        .row_img2 {
+            background-image: url('../img/pic02.png');
+            background-size: cover;
+            height: 300px;
+        }
+
+        .row_img3 {
+            background-image: url('../img/pic03.png');
+            background-size: cover;
+            height: 300px;
+        }
+
+        .row_img4 {
+            background-image: url('../img/pic04.png');
+            background-size: cover;
+            height: 300px;
+        }
+        .container_story{
+            background-image: url('../img/bamboo-bacc02.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .story_H{
+            padding-top: 30px;
+        }
+        .story_H h1{
+            text-align: center;
+            letter-spacing:0;
+            line-height: 10px;
+            background-image: url('../img/tit_img2.png');
+            background-size: cover;
+            background-position: center center;
+            margin-top: 50px;
+            margin-bottom: 50x;
+        }
+        .story_H h1 span{
+            background-color: white;
+            padding: 10px;
+            font-family: 'Microsoft JhengHei';
+        }
+        .story_B{
+            position: relative;
+        }
+        .story_B .picA{
+            background-image: url('../img/surroundings.jpg');
+            width: 600px;
+            height: 400px;
+            background-size: cover;
+            position: absolute;
+            bottom: 180px;
+            left: 50px;
+        }
+        .story_B .word{
+            color:rgb(31, 26, 26);
+            z-index: 10;
+            letter-spacing: 3px;
+            padding: 100px;
+            margin-top: 130px;
+        }
+        .story_B .word h2{
+            text-align: right;
+            font-size: 48px;
+        }
+        .story_B .word p{
+            text-align: left;
+            margin-top: 50px;
+            text-align: justify;
+
+        }
+        .story_B .picB{
+            width: 400px;
+            height: 200px;
+            background-size: cover;
+            background-image: url('../img/surroundings02.jpg');
+            background-position: center;
+            position: absolute;
+            bottom: 50px;
+            right: 100px;
+        }
+        .story_F{
+            position: relative;
+        }
+        .story_F .word{
+            color:rgb(31, 26, 26);
+            z-index: 10;
+            letter-spacing: 3px;
+            padding: 100px;
+            margin-top: 50px;
+        }
+        .story_F .word h2{
+            text-align: left;
+            font-size: 48px;
+        }
+        .story_F .word p{
+            text-align: left;
+            margin-top: 50px;
+            text-align: justify;
+        }
+        .story_F .picA{
+            background-image: url('../img/smile.jpg');
+            width: 600px;
+            height: 400px;
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: absolute;
+            right: 100px;
+            bottom: 180px;
+        }
+        .story_F .picB{
+            width: 400px;
+            height: 200px;
+            background-size: cover;
+            background-image: url('../img/smile02.jpg');
+            background-position: center;
+            position: absolute;
+            left: 100px;
+            bottom: 50px;
+        }
+        .row h3, .row p {
+            text-align: left;
+        }
+        .row .word {
+            padding: 100px;
+        }
+        .quality_H h1{
+            text-align: center;
+            letter-spacing:0;
+            line-height: 10px;
+            background-image: url('../img/tit_img2.png');
+            background-size: cover;
+            background-position: center center;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+        .quality_H h1 span{
+            background-color: white;
+            padding: 10px;
+            font-family: 'Microsoft JhengHei';
+        }
+        .row_img5{
+            background-image: url('../img/SGS-01.png');
+            background-size: contain;
+            height: 750px;
+            background-repeat: no-repeat;
+        }
+        .row_img6{
+            background-image: url('../img/SGS-02.png');
+            background-size: contain;
+            height: 750px;
+            background-repeat: no-repeat;
+        }
+        .about_H h1{
+            text-align: center;
+            letter-spacing:0;
+            line-height: 10px;
+            background-image: url('../img/tit_img2.png');
+            background-size: cover;
+            background-position: center center;
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+        .about_H h1 span{
+            background-color: white;
+            padding: 10px;
+            font-family: 'Microsoft JhengHei';
+        }
+        .about_B_L_up{
+            background-image: url('../img/taiwan.jpg');
+            width: 100%;
+            height: 300px;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        .about_B_L_btm h3{
+            text-align: center;
+        }
+        .about_B_L_btm p{
+            text-align: center;
+            letter-spacing: 3px;
+            margin-top: 20px;
+        }
+        .row .about_B_L_btm{
+            padding: 50px;
+        }
+        .about_B_R h3 {
+            text-align: center;
+        }
+        .about_B_R p{
+            letter-spacing: 3px;
+            margin-top: 100px;
+            text-align: justify;            
+        }
+        .row .about_B_R{
+            padding: 100px;
+        }
+        .about_F{
+            margin-left: 25%;
+        }
+        .footer{
+            text-align: center;
+        }
+        .footer img{
+            max-width: 100%;
+        }
+        .footer ul li:first-child {
+            border: none;
+        }
+        .footer ul li{
+            display: inline-block;
+            padding-left: 10px;
+            padding-right: 10px;
+            border-left: 1px solid #444;
+            font-size: 16px;
+        }
