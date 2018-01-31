@@ -19,6 +19,14 @@
             z-index: 9999;
             background-color: white;
         }
+        .navbar-brand{
+            background-image: url('/img/Olife-all-1.png');
+            width: 200px;
+            height: 40px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            display: none;
+        }
         .container{
             z-index: 3000;
             padding: 0;
@@ -187,7 +195,7 @@
         .word p{
             font-size: 16px;
         }
-        .row{
+        .reviews .row{
             width: 80%;
             margin-left: auto;
             margin-right: auto;
@@ -335,7 +343,7 @@
             position: relative;
             
         }
-        .story_B .picA{
+        /* .story_B .picA{
             background-image: url('../img/surroundings.jpg');
             width: 700px;
             height: 400px;
@@ -343,12 +351,11 @@
             position: absolute;
             bottom: 30%;
             left: 25%;
-        }
+        } */
         .story_B .word{
             color:rgb(31, 26, 26);
             z-index: 10;
             letter-spacing: 3px;
-            padding: 100px;
             margin-top: 130px;
             width: 70%;
             margin-left: auto;
@@ -365,7 +372,7 @@
             text-align: justify;
 
         }
-        .story_B .picB{
+        /* .story_B .picB{
             width: 400px;
             height: 250px;
             background-size: cover;
@@ -374,15 +381,15 @@
             position: absolute;
             bottom: 10%;
             right: 25%;
-        }
+        } */
         .story_F{
             position: relative;
+            
         }
         .story_F .word{
             color:rgb(31, 26, 26);
             z-index: 10;
             letter-spacing: 3px;
-            padding: 100px;
             margin-top: 50px;
             width: 70%;
             margin-left: auto;
@@ -398,7 +405,7 @@
             margin-top: 50px;
             text-align: justify;
         }
-        .story_F .picA{
+        /* .story_F .picA{
             background-image: url('../img/smile.jpg');
             width: 700px;
             height: 400px;
@@ -418,7 +425,7 @@
             position: absolute;
             left: 25%;
             bottom: 10%;
-        }
+        } */
         .row h3, .row p {
             text-align: left;
         }
@@ -553,9 +560,49 @@
             transform: translateY(-100px)
         }
         @media screen and (max-width: 768px) {
-            
+            .show_box{
+                display: none;
+            }
+            .story_B .word{
+                width: 70%;
+            }
+            .navbar-brand{
+                display: block;
+            }
+            .container{
+                width: 750px;
+            }
         }
 
         @media screen and (max-width: 480px) {
-            order:
+            .dowebok {
+                width: 300px;
+            }
+            iframe{
+                width: 300px;
+            }
+            .the_mobile{
+                display: static;
+            }
+            .filtr-item {
+                width: 50%;
+            }   
+            .filtr-item img {
+                width: 50%;
+            }
+            .head_logo{
+                display: block;
+            }
+            .story_F .word{
+                width: 100%;
+            }
+            .story_F{
+                width: 70%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .navbar-brand{
+                display: block;
+            }
         }
+        
