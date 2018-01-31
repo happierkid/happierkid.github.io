@@ -12,64 +12,104 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/css/swiper.min.css">
     <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+
+
 </head>
 
 <body>
 
-    <div class="container">
-        <div class="header">
-
+    <div class="header">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#news_anchor">News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#product_anchor">Product</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#story_anchor">Story</a>
+                        </li>
+                        <li class="nav-item d-none d-md-none d-sm-none d-lg-block">
+                            <div class="logo">
+                                <img src="/img/Olife-all-1.png" alt="">
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#quality_anchor">Quality</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about_anchor">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://www.pinkoi.com/store/mrbanboo">訂購</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
         </div>
     </div>
-    <div class="swiper-container">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide swiper_img1"></div>
-            <div class="swiper-slide swiper_img2"></div>
-            <div class="swiper-slide swiper_img3"></div>
-        </div>
-        <!-- Add Pagination -->
-        <div class="swiper-pagination"></div>
-        <!-- Add Arrows -->
-        <div class="swiper-button-next">
-            <i class="fas fa-chevron-circle-right fa-2x"></i>
-        </div>
-        <div class="swiper-button-prev">
-            <i class="fas fa-chevron-circle-left fa-2x"></i>
+    <div class="boxaaa">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide swiper_img1"></div>
+                <div class="swiper-slide swiper_img2"></div>
+                <div class="swiper-slide swiper_img3"></div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination">
+            </div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next">
+                <i class="fas fa-chevron-circle-right fa-2x"></i>
+            </div>
+            <div class="swiper-button-prev">
+                <i class="fas fa-chevron-circle-left fa-2x"></i>
+            </div>
         </div>
     </div>
     <div class="show_box">
-        <div class="mob_style">
-            <div class="the_mobile">
-                <div class="mob_browser"></div>
-                <div class="arr_btn">
-                    <div class="prev">
-                        <i class="fas fa-caret-square-up fa-2x"></i>
-                    </div>
-                    <div class="next">
-                        <i class="fas fa-caret-square-down fa-2x"></i>
+        <div id="news_anchor"></div>
+        <div class="row  justify-content-between">
+            <div class="mob_style col-4">
+                <div id="the_mobile">
+                    <div class="mob_browser"></div>
+                    <div class="arr_btn">
+                        <div class="prev">
+                            <i class="fas fa-caret-square-up fa-2x"></i>
+                        </div>
+                        <div class="next">
+                            <i class="fas fa-caret-square-down fa-2x"></i>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="mob_info">
-            <h3>立即掃描，快速分享
-                <br>跟親朋好友CODE在一起
-            </h3>
-            <div class="QRcode_img">
-                <img src="img/QRcode.png" width=100% alt="">
+            <div class="mob_info col-4">
+                <h3>立即掃描，快速分享
+                    <br>跟親朋好友CODE在一起
+                </h3>
+                <div class="QRcode_img">
+                    <img src="img/QRcode.png" width=100% alt="">
+                </div>
             </div>
         </div>
     </div>
     <div class="reviews">
         <div class="bamboo"></div>
-        <div class="row align-items-center">
-            <div class="col-md-6 col-sm-12 align-self-center">
+        <div class="row align-items-center ">
+            <div class="col-md-6 col-sm-12 align-self-center order-md-1 order-2">
                 <div class="word">
                     <h3>高溫沸騰水煮殺菌</h3>
                     <p>費工的沸騰高溫水煮，更能將肉眼看不到的雜質與壞菌，有效消除降至最低</p>
                 </div>
             </div>
-            <div class="col-md-6 col-sm-12">
+            <div class="col-md-6 col-sm-12 order-md-2 order-1">
                 <div class="row_img1 m-3"></div>
             </div>
         </div>
@@ -85,13 +125,13 @@
             </div>
         </div>
         <div class="row align-items-center">
-            <div class="col-md-6 col-sm-12 align-self-center ">
+            <div class="col-md-6 col-sm-12 align-self-center order-md-1 order-2">
                 <div class="word">
                     <h3>EPnS塗裝不發霉</h3>
                     <p>SGS兒童安全玩具標準，美國FDA食用器具標準</p>
                 </div>
             </div>
-            <div class="col-md-6 col-sm-12">
+            <div class="col-md-6 col-sm-12 order-md-2 order-1">
                 <div class="row_img3 m-3"></div>
             </div>
         </div>
@@ -107,156 +147,167 @@
             </div>
         </div>
     </div>
-    <div class="container_product">
+    <div id="container_product">
+        <div id="product_anchor"></div>
         <div class="product_H">
             <h1>
                 <span>Product</span>
             </h1>
         </div>
-        <div class="prodcuct_B">
-            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                <li class="nav-item">
-                    <a class="nav-link" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home"
-                        aria-selected="true">手工竹牙刷</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile"
-                        aria-selected="false">兒童專用</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact"
-                        aria-selected="false">矯正牙齒專用</a>
-                </li>
-            </ul>
-            <div class="tab-content" id="pills-tabContent">
-                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">...</div>
-                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-                    <div class="row align-items-center">
-                        <div class="col-md-4 col-sm-12 align-self-center ">
-                            <div class="card child-01">
-                                <img src="../img/radish.jpg" alt="">
-                            </div>
-                            <div class="word_child-01">【胡蘿蔔】</div>
-                        </div>
-                        <div class="col-md-4 col-sm-12">
-                            <div class="card child-02">
-                                <img src="../img/chili.jpg" alt="">
-                            </div>
-                            <div class="word_child-01">【小辣椒】</div>
-                        </div>
-                        <div class="col-md-4 col-sm-12">
-                            <div class="card child-02">
-                                <img src="../img/eggplant.jpg" alt="">
-                            </div>
-                            <div class="word_child-01">【紫茄子】</div>
-                        </div>
+        <ul class="nav">
+            <div class="nav_item">
+                <li class="active" data-filter="all">全部商品</li>
+                <li data-filter="1">手工牙刷</li>
+                <li data-filter="2">兒童專用</li>
+                <li data-filter="3">矯正牙齒</li>
+            </div>
+        </ul>
+        <div class="dowe_container">
+            <div class="dowebok">
+                <div class="filtr-item" data-category="1">
+                    <img src="../img/brush01-01.jpg" alt="">
+                    <div class="word_child">【強硬馬毛 全色系列】</div>
+                </div>
+                <div class="filtr-item" data-category="2">
+                    <img src="../img/radish.jpg" alt="">
+                    <div class="word_child">【柔軟 胡蘿蔔】</div>
+                </div>
+                <div class="filtr-item" data-category="1">
+                    <img src="../img/brush01-02.jpg" alt="">
+                    <div class="word_child">【適中軟度 單色漸層】</div>
+                </div>
+                <div class="filtr-item" data-category="3">
+                    <img src="../img/correction01-01.jpg" alt="">
+                    <div class="word_child">【外長內短ㄩ型】</div>
+                </div>
+                <div class="filtr-item" data-category="1">
+                    <img src="../img/brush02-02.jpg" alt="">
+                    <div class="word_child">【適中軟度 夢幻雙色】</div>
+                </div>
+                <div class="filtr-item" data-category="2">
+                    <img src="../img/chili.jpg" alt="">
+                    <div class="word_child">【柔軟 小辣椒】</div>
+                </div>
+                <div class="filtr-item" data-category="1">
+                    <img src="../img/brush03-03.jpg" alt="">
+                    <div class="word_child">【適中軟度 漸層叁色】</div>
+                </div>
+                <div class="filtr-item" data-category="2">
+                    <img src="../img/eggplant.jpg" alt="">
+                    <div class="word_child">【柔軟 紫茄子】</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="container_story">
+            <div id="story_anchor"></div>
+            <div class="story_H">
+                <h1>
+                    <span>Story</span>
+                </h1>
+            </div>
+            <div class="story_B">
+                <div class="story_B word">
+                    <h2>起源</h2>
+                    <p>Olife原生活品牌洪先生是一位手工眼鏡職人，有著對於手工喜愛的熱血，嘗試各種可能性，希望將竹子結合日常用品，以每天不可或缺的日用品牙刷作為友善環境的第一步，堅持著不讓機器取代人類，不讓塑膠取代大自然的素材，為大地敬一份心力的精神，創造出不發霉、不怕水顛覆傳統的竹牙刷。
+                        <br>
+                        <br>更使用了天然白馬毛，可於環境中自然分解，期盼環保不只是一個口號，而是從日常生活中實踐，希望透過一支竹牙刷鼓勵人們一點一滴更友善環境，讓生活步調再次回到，原來單純的生活環境，讓塑膠不再過度使用、讓心情能得到暫時的放鬆，感受著回去50年代，那時的緩慢步調。
+                    </p>
+                </div>
+                <!-- <div class="story_B picA"></div>
+                <div class="story_B picB"></div> -->
+            </div>
+            <div class="story_F">
+                <div class="story_F word">
+                    <h2>信念</h2>
+                    <p>科技帶來人們的便利性也將越來越先進，但人的初心也可能越來越複雜，貧富差距會越大、生活差距會越大、商品差距會大、價值觀差距會越大，未來將會出現兩種人，一者身邊的東西都是最先進、一者身邊東西都是最有機、最環保、最原始。
+                        <br>
+                        <br>而我們想做的事，不是排斥高科技，而是讓這麼冷冰冰的世界可以保留更多原始的事物，更接近人與人之間的虛寒問暖，不讓機器人取代人類，不讓塑膠品取代大自然所賜的天然素材，讓越來越多人能夠用心感受，簡單的生活態度，能讓人的慾望降到最低，自然心胸更豁達，因為光溜溜地來、也會光溜溜地離開，讓一切越簡單，相信自然越寬心。
+                    </p>
+                </div>
+                <!-- <div class="story_F picA"></div>
+                <div class="story_F picB"></div> -->
+            </div>
+        </div>
+        <div id="container_quality">
+            <div id="quality_anchor"></div>
+            <div class="quality_H">
+                <h1>
+                    <span>Quality</span>
+                </h1>
+            </div>
+            <div class="quality_B">
+                <div class="row align-items-center">
+                    <div class="col-md-6 col-sm-12 align-self-center ">
+                        <div class="row_img5"></div>
                     </div>
-                </div>
-                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
-            </div>
-        </div>
-    </div>
-    <div class="container_story">
-        <div class="story_H">
-            <h1>
-                <span>Story</span>
-            </h1>
-        </div>
-        <div class="story_B">
-            <div class="story_B word">
-                <h2>起源</h2>
-                <p>Olife原生活品牌洪先生是一位手工眼鏡職人，有著對於手工喜愛的熱血，嘗試各種可能性，希望將竹子結合日常用品，以每天不可或缺的日用品牙刷作為友善環境的第一步，堅持著不讓機器取代人類，不讓塑膠取代大自然的素材，為大地敬一份心力的精神，創造出不發霉、不怕水顛覆傳統的竹牙刷。
-                    <br>
-                    <br>更使用了天然白馬毛，可於環境中自然分解，期盼環保不只是一個口號，而是從日常生活中實踐，希望透過一支竹牙刷鼓勵人們一點一滴更友善環境，讓生活步調再次回到，原來單純的生活環境，讓塑膠不再過度使用、讓心情能得到暫時的放鬆，感受著回去50年代，那時的緩慢步調。
-                </p>
-            </div>
-            <div class="story_B picA"></div>
-            <div class="story_B picB"></div>
-        </div>
-        <div class="story_F">
-            <div class="story_F word">
-                <h2>信念</h2>
-                <p>科技帶來人們的便利性也將越來越先進，但人的初心也可能越來越複雜，貧富差距會越大、生活差距會越大、商品差距會大、價值觀差距會越大，未來將會出現兩種人，一者身邊的東西都是最先進、一者身邊東西都是最有機、最環保、最原始。
-                    <br>
-                    <br>而我們想做的事，不是排斥高科技，而是讓這麼冷冰冰的世界可以保留更多原始的事物，更接近人與人之間的虛寒問暖，不讓機器人取代人類，不讓塑膠品取代大自然所賜的天然素材，讓越來越多人能夠用心感受，簡單的生活態度，能讓人的慾望降到最低，自然心胸更豁達，因為光溜溜地來、也會光溜溜地離開，讓一切越簡單，相信自然越寬心。
-                </p>
-            </div>
-            <div class="story_F picA"></div>
-            <div class="story_F picB"></div>
-        </div>
-    </div>
-    <div class="container_quality">
-        <div class="quality_H">
-            <h1>
-                <span>Quality</span>
-            </h1>
-        </div>
-        <div class="quality_B">
-            <div class="row align-items-center">
-                <div class="col-md-6 col-sm-12 align-self-center ">
-                    <div class="row_img5"></div>
-                </div>
-                <div class="col-md-6 col-sm-12">
-                    <div class="row_img6 m-3"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container_about">
-        <div class="about_H">
-            <h1>
-                <span>About</span>
-            </h1>
-        </div>
-        <div class="about_B">
-            <div class="row align-items-center">
-                <div class="col-md-6 col-sm-12 align-self-center ">
-                    <div class="about_B_L_up m-3"></div>
-                    <div class="about_B_L_btm">
-                        <h3>Olife原生活</h3>
-                        <p>04-2319-8000*8102
-                            <br>台中市西區健行路1049號1F</p>
-                    </div>
-                </div>
-                <div class="col-md-6 col-sm-12">
-                    <div class="about_B_R">
-                        <h3>三公分哲學</h3>
-                        <p>很多人都不知道，竹子的成長速度很快，但是它前三，四年可能長不到三公分，因為它在紮根，而竹子的根可以擴及到周圍二，三公尺.....到了第四年之後，竹子便會以一天一公尺的速度衝刺成長，只需要約十幾天就可以長到十幾公尺高，這跟做人做事一樣的道理，所以【你能不能衝過
-                            這三公分才是關鍵】
-                        </p>
+                    <div class="col-md-6 col-sm-12">
+                        <div class="row_img6 m-3"></div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="about_F">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/oYHdS8RGUZ8" frameborder="0" allow="autoplay; encrypted-media"
-                allowfullscreen></iframe>
+        <div id="container_about">
+            <div id="about_anchor"></div>
+            <div class="about_H">
+                <h1>
+                    <span>About</span>
+                </h1>
+            </div>
+            <div class="about_B">
+                <div class="row align-items-center">
+                    <div class="col-md-6 col-sm-12 align-self-center ">
+                        <div class="about_B_L_up m-3"></div>
+                        <div class="about_B_L_btm">
+                            <h3>Olife原生活</h3>
+                            <p>04-2319-8000*8102
+                                <br>台中市西區健行路1049號1F</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <div class="about_B_R">
+                            <h3>三公分哲學</h3>
+                            <p>很多人都不知道，竹子的成長速度很快，但是它前三，四年可能長不到三公分，因為它在紮根，而竹子的根可以擴及到周圍二，三公尺.....到了第四年之後，竹子便會以一天一公尺的速度衝刺成長，只需要約十幾天就可以長到十幾公尺高，這跟做人做事一樣的道理，所以【你能不能衝過
+                                這三公分才是關鍵】
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="about_F container">
+                <div class="row">
+                    <div class="col-6 offset-3">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/oYHdS8RGUZ8" frameborder="0" allow="autoplay; encrypted-media"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
         </div>
-    </div>
     </div>
     <div class="footer">
         <div class="col-sm-12">
             <img src="../img/Olife-all-1.png">
             <ul>
                 <li>
-                    News
+                    <a href="#news_anchor">News</a>
                 </li>
                 <li>
-                    Product
+                    <a href="#product_anchor">Product</a>
                 </li>
                 <li>
-                    Story
+                    <a href="#story_anchor">Story</a>
                 </li>
                 <li>
-                    Quality
+                    <a href="#quality_anchor">Quality</a>
                 </li>
                 <li>
-                    About
+                    <a href="#about_anchor">About</a>
                 </li>
                 <li>
-                    訂購
+                    <a href="https://www.pinkoi.com/store/mrbanboo">訂購</a>
                 </li>
             </ul>
+            <p>Olife原生活 © 2017 All rights reserved.</p>
         </div>
     </div>
 
@@ -269,8 +320,22 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/js/swiper.min.js"></script>
 
     <script src="js/imgLiquid-min.js"></script>
+    <script src="js/jquery.filterizr.min.js"></script>
+
+    <!-- Navbar滑動效果 -->
     <script>
-        var swiper = new Swiper('.swiper-container', {
+        $(window).scroll(function () {
+            var scroll = $(window).scrollTop();
+            if (scroll > 720) {
+                $(".header").addClass("fixed");
+            } else {
+                $(".header").removeClass("fixed");
+            }
+        });
+    </script>
+
+    <script>
+        var swiper = new Swiper('.boxaaa>.swiper-container', {
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
@@ -299,6 +364,16 @@
 
         $(document).ready(function () {
             $(".navbar-brand").imgLiquid();
+        });
+    </script>
+
+    <script>
+        $(function () {
+            $('.dowebok').filterizr();
+
+            $('.nav li').on('click', function () {
+                $(this).toggleClass('active').siblings().removeClass('active');
+            });
         });
     </script>
 </body>
