@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/css/swiper.min.css">
     <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    
+
 
 
 </head>
@@ -204,7 +204,7 @@
                 </div>
             </div>
         </div>
-
+        
         <div id="container_story">
             <div id="story_anchor"></div>
             <div class="story_H">
@@ -244,10 +244,10 @@
             </div>
             <div class="quality_B">
                 <div class="row align-items-center">
-                    <div class="col-md-6 col-sm-12 align-self-center ">
+                    <div class="col-md-6 col-sm-12 align-self-center " style="padding:0">
                         <div class="row_img5"></div>
                     </div>
-                    <div class="col-md-6 col-sm-12">
+                    <div class="col-md-6 col-sm-12" style="padding:0">
                         <div class="row_img6 m-3"></div>
                     </div>
                 </div>
@@ -382,6 +382,14 @@
             });
         });
     </script>
+
+    <script>
+        $('.navbar-nav>li>a').on('click', function () {
+            $('.navbar-collapse').collapse('hide');
+        });
+    </script>
+
+
 </body>
 
 </html>

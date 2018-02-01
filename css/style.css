@@ -101,7 +101,7 @@
 
         .swiper_img3 {
             background-image: url("../img/hover3-1.jpg");
-            background-position: 80% 50%;
+            background-position: 90% 50%;
         }
 
         .swiper-button-next,
@@ -258,20 +258,24 @@
             text-align: center;
             background-size: contain;
             position: relative;
-            margin-top: 10px;
+            /* margin-top: 10px; */
+            bottom: 1rem;
+            background-color: black;
+            color: white;
+            max-width: 100%;
         }
 
         ul {
 			list-style-type: none;
 		}
-
+       
 		.nav {
 			width: 100%;
 			margin: 0 auto 20px;
 			text-align: center;
             font-size: 0; 
 		}
-
+        
 		.nav li {
 			display: inline-block;
 			margin: 0 5px;
@@ -293,6 +297,33 @@
         .nav_item li{
             margin-left: 20px;
             margin-right: 20px;
+        }
+        .filterizr__controls li {
+            background-color: #bbb;
+            color: white;
+            cursor: pointer;
+            display: inline-block;
+            text-transform: uppercase;
+            padding: 1rem 2rem;
+            transition: all 200ms;
+            cursor: pointer;
+        }
+
+        .filterizr__controls li.active {
+            background-color: blue;
+        }
+
+        .filterizr__elements figure {
+            padding: 1rem;
+        }
+
+        .filterizr__elements figure figcaption {
+            color: white;
+            position: absolute;
+            text-transform: uppercase;
+            padding: 1rem;
+            z-index: 1;
+            bottom: 1rem;
         }
 		.dowebok {
             width: 1000px;
@@ -458,6 +489,7 @@
             background-size: contain;
             height: 750px;
             background-repeat: no-repeat;
+            margin: 0;
         }
 
         .about_H h1{
@@ -477,7 +509,7 @@
         }
         .about_B_L_up{
             background-image: url('../img/taiwan.jpg');
-            width: 100%;
+            max-width: 100%;
             height: 300px;
             background-size: contain;
             background-repeat: no-repeat;
@@ -523,9 +555,6 @@
             padding-left: 0;
             margin-bottom: 0;
         }
-        .about_F .row{
-            width: 100%;
-        }
         .footer ul li{
             display: inline-block;
             padding-left: 10px;
@@ -559,6 +588,11 @@
         #about_anchor{
             transform: translateY(-100px)
         }
+
+        /* .row2{
+            margin-left: 0;
+            margin-right: 0;
+        } */
         @media screen and (max-width: 768px) {
             .show_box{
                 display: none;
@@ -572,14 +606,28 @@
             .container{
                 width: 750px;
             }
+            .swiper_img1 {
+                background-image: url('../img/hover1.jpg');
+                background-position: 95% top;
+            }
+            .swiper_img2 {
+                background-image: url("../img/hover2.jpg");
+                background-position: 95% top;
+            }
+            .swiper_img3 {
+                background-image: url("../img/hover3-1.jpg");
+                background-position: 90% 50%;
+            }
+
         }
 
         @media screen and (max-width: 480px) {
-            .dowebok {
-                width: 300px;
+            .col-md-3 {
+                width: 25%;
             }
-            iframe{
-                width: 300px;
+            .reviews .word{
+                width: 100%;
+                padding: 0;
             }
             .the_mobile{
                 display: static;
@@ -604,5 +652,14 @@
             .navbar-brand{
                 display: block;
             }
+            .word_child{
+                font-size: 8pt;
+                max-width: 50%;
+            }
+            .about_F{
+                margin: 0;
+            }
+            .container{
+                margin: 0;
+            }
         }
-        
