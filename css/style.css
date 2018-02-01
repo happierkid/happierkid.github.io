@@ -3,10 +3,11 @@
             box-sizing: border-box;
         } */
 
-        html,
-        body {
+        html, body {
             height: 100%;
         }
+
+        /* nav */
         .header{
             position: absolute;
             top: -73px;
@@ -56,7 +57,6 @@
         li .nav-link{
             padding-top: 20px;
             padding-bottom: 0;
-
         }
         .navbar-nav{
             width:  100%;
@@ -66,6 +66,9 @@
         .navbar-nav li:nth-child(3)::before, li:nth-child(4)::before, li:nth-child(7)::before{
             height: 0;
         }
+        /* nav */
+
+        /* banner */
         body {
             background: #fff;
             font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -81,41 +84,36 @@
             left: 0;
             top: 0;
         }
-
         .swiper-slide {
             background-position: center;
             background-size: cover;
             width: 100%;
-
         }
-
         .swiper_img1 {
             background-image: url('../img/hover1.jpg');
             background-position: 70% top;
         }
-
         .swiper_img2 {
             background-image: url("../img/hover2.jpg");
             background-position: 80% top;
         }
-
         .swiper_img3 {
             background-image: url("../img/hover3-1.jpg");
             background-position: 90% 50%;
         }
-
         .swiper-button-next,
         .swiper-container-rtl .swiper-button-prev {
             background: none;
             color: lightgray;
         }
-
         .swiper-button-prev,
         .swiper-container-rtl .swiper-button-next {
             background: none;
             color: lightgray;
         }
+        /* banner */
 
+        /* news */
         .show_box {
             width: 100%;
             max-width: 730px;
@@ -124,12 +122,10 @@
             margin: auto;
             margin-top: 200px;
         }
-
         .mob_style {
             position: relative;
             width: 365px;
         }
-
         #the_mobile {
             width: 365px;
             height: 550px;
@@ -141,7 +137,6 @@
             position: absolute;
             background-repeat: no-repeat;
         }
-
         .mob_browser {
             width: 260px;
             height: 420px;
@@ -151,14 +146,12 @@
             background-size: cover;
             background-repeat: no-repeat;
         }
-
         .arr_btn {
             position: absolute;
             top: 40%;
             right: 0;
             margin: 0;
         }
-
         .mob_info {
             width: 365px;
             position: absolute;
@@ -166,20 +159,20 @@
             padding: 50px 0 30px 0;
             text-align: center;
         }
-
         .mob_info>h3 {
             padding: 50px 0 30px 0;
             line-height: 36px;
             font-size: 22px;
             font-weight: normal;
         }
-
         .QRcode_img {
             width: 200px;
             height: 200px;
             margin: 0 auto;
         }
+        /* news */
 
+        /* technology */
         .reviews {
             background-size: cover;
             position: relative;
@@ -206,27 +199,31 @@
             height: 300px;
             background-position: center
         }
-
         .row_img2 {
             background-image: url('../img/pic02-01.jpg');
             background-size: cover;
             height: 300px;
             background-position: bottom;
         }
-
         .row_img3 {
             background-image: url('../img/pic03-01.jpg');
             background-size: cover;
             height: 300px;
             background-position: center;
         }
-
         .row_img4 {
             background-image: url('../img/pic04-01.jpg');
             background-size: cover;
             height: 300px;
             background-position: 80%;
         }
+        .reviews .row h3, .row p {
+            text-align: left;
+        }
+        .reviews .row .word {
+            padding: 100px;
+        }
+        /* technology */
 
         .product_H h1{
             text-align: center;
@@ -244,38 +241,17 @@
             padding: 10px;
             font-family: 'Microsoft JhengHei';
         }
-        .product_B{
-            position: relative;
-        }
-        
-        .swiper_pic{
-            padding-bottom: 60px;
-            padding-top: 60px;
-        }
 
-        /* Product word */
-        .word_child{
-            text-align: center;
-            background-size: contain;
-            position: relative;
-            /* margin-top: 10px; */
-            bottom: 1rem;
-            background-color: black;
-            color: white;
-            max-width: 100%;
-        }
-
+        /* product */
         ul {
 			list-style-type: none;
 		}
-       
 		.nav {
 			width: 100%;
 			margin: 0 auto 20px;
 			text-align: center;
             font-size: 0; 
 		}
-        
 		.nav li {
 			display: inline-block;
 			margin: 0 5px;
@@ -289,7 +265,6 @@
             margin-left: 50%;
             transform: translateX(-50%);
         }
-
 		.nav .active {
 			color: #fff;
 			background-color: #21b384;
@@ -298,6 +273,32 @@
             margin-left: 20px;
             margin-right: 20px;
         }
+            /* Product word */
+        .word_child{
+            text-align: center;
+            background-size: contain;
+            position: relative;
+            bottom: 1rem;
+            background-color: black;
+            color: white;
+            max-width: 100%;
+        }
+        .dowebok {
+            width: 1000px;
+            font-size: 20px;
+            margin: 0 auto;
+        }
+		.filtr-item {
+			display: inline-block;
+			width: 25%;
+            padding: 10px;
+		}
+		.filtr-item img {
+			width: 100%;
+		}
+        /* product */
+
+        /* productB */
         .filterizr__controls li {
             background-color: #bbb;
             color: white;
@@ -308,15 +309,12 @@
             transition: all 200ms;
             cursor: pointer;
         }
-
         .filterizr__controls li.active {
             background-color: blue;
         }
-
         .filterizr__elements figure {
             padding: 1rem;
         }
-
         .filterizr__elements figure figcaption {
             color: white;
             position: absolute;
@@ -325,22 +323,9 @@
             z-index: 1;
             bottom: 1rem;
         }
-		.dowebok {
-            width: 1000px;
-            font-size: 20px;
-            margin: 0 auto;
-        }
+        /* productB */
 
-		.filtr-item {
-			display: inline-block;
-			width: 25%;
-            padding: 10px;
-		}
-
-		.filtr-item img {
-			width: 100%;
-		}
-
+        /* story */
         #container_story{
             background-image: url('../img/smile02-01.jpg');
             background-size: cover;
@@ -369,20 +354,9 @@
             font-family: 'Microsoft JhengHei';
             
         }
-
         .story_B{
             position: relative;
-            
         }
-        /* .story_B .picA{
-            background-image: url('../img/surroundings.jpg');
-            width: 700px;
-            height: 400px;
-            background-size: cover;
-            position: absolute;
-            bottom: 30%;
-            left: 25%;
-        } */
         .story_B .word{
             color:rgb(31, 26, 26);
             z-index: 10;
@@ -403,19 +377,8 @@
             text-align: justify;
 
         }
-        /* .story_B .picB{
-            width: 400px;
-            height: 250px;
-            background-size: cover;
-            background-image: url('../img/surroundings02.jpg');
-            background-position: center;
-            position: absolute;
-            bottom: 10%;
-            right: 25%;
-        } */
         .story_F{
-            position: relative;
-            
+            position: relative;   
         }
         .story_F .word{
             color:rgb(31, 26, 26);
@@ -436,33 +399,9 @@
             margin-top: 50px;
             text-align: justify;
         }
-        /* .story_F .picA{
-            background-image: url('../img/smile.jpg');
-            width: 700px;
-            height: 400px;
-            background-size: contain;
-            background-position: center;
-            background-repeat: no-repeat;
-            position: absolute;
-            right: 25%;
-            bottom: 42%;
-        }
-        .story_F .picB{
-            width: 400px;
-            height: 250px;
-            background-size: cover;
-            background-image: url('../img/smile02.jpg');
-            background-position: center;
-            position: absolute;
-            left: 25%;
-            bottom: 10%;
-        } */
-        .row h3, .row p {
-            text-align: left;
-        }
-        .row .word {
-            padding: 100px;
-        }
+        /* story */
+
+        /* quality */
         .quality_H h1{
             text-align: center;
             letter-spacing:0;
@@ -477,6 +416,9 @@
             background-color: white;
             padding: 10px;
             font-family: 'Microsoft JhengHei';
+        }
+        .container_quality .row{
+            max-width: 80%;
         }
         .row_img5{
             background-image: url('../img/SGS-01.png');
