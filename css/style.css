@@ -385,6 +385,7 @@
         }
         .story_F{
             position: relative;   
+            
         }
         .story_F .word{
             color:rgb(31, 26, 26);
@@ -405,6 +406,7 @@
             margin-top: 50px;
             text-align: justify;
         }
+        
         /* story */
 
         /* quality */
