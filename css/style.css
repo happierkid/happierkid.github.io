@@ -95,15 +95,20 @@
         }
 
         .swiper_img2 {
-            background-image: url("../img/hover2.jpg");
-            background-position: 80% top;
+            background-image: url("../img/hover4.jpg");
+            
+            background-position: center;
+            background-size: cover;
         }
 
         .swiper_img3 {
+            background-image: url("../img/hover2.jpg");
+            background-position: 80% top;
+        }
+        .swiper_img4{
             background-image: url("../img/hover3-1.jpg");
             background-position: 90% 50%;
         }
-
         .swiper-button-next,
         .swiper-container-rtl .swiper-button-prev {
             background: none;
