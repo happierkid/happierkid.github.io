@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/css/swiper.min.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet">
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <style>
+        .filterizr__controls li {
+            background-color: #bbb;
+            color: white;
+            cursor: pointer;
+            display: inline-block;
+            text-transform: uppercase;
+            padding: 1rem 2rem;
+            transition: all 200ms;
+            cursor: pointer;
+        }
+
+        .filterizr__controls li.active {
+            background-color: blue;
+        }
+
+        .filterizr__elements figure {
+            padding: 1rem;
+        }
+
+        .filterizr__elements figure figcaption {
+            color: white;
+            position: absolute;
+            text-transform: uppercase;
+            padding: 1rem;
+            z-index: 1;
+            bottom: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="row">
+            <ul class="filterizr__controls list-unstyled list-inline">
+                <li class="active" data-filter="all">All</li>
+                <li data-filter="1">First</li>
+                <li data-filter="2">Second</li>
+                <li data-filter="3">Third</li>
+            </ul>
+        </div>
+
+        <div class="row filterizr__elements">
+            <figure class="col-6 col-sm-4 col-md-3 filtr-item" data-category="1, 3">
+                <img class="img-fluid" src="http://www.targel.com.tw/doc/s_product/bargelred.jpg" alt>
+                <figcaption class="item-desc">Title</figcaption>
+            </figure>
+            <figure class="col-6 col-sm-4 col-md-3 filtr-item" data-category="2, 3">
+                <img class="img-fluid" src="http://www.pro-croissant.com/product/image/pics/1%E6%AA%94%E6%A1%88_003%20(1).jpeg" alt>
+                <figcaption class="item-desc">Title</figcaption>
+            </figure>
+            <figure class="col-6 col-sm-4 col-md-3 filtr-item" data-category="1, 3">
+                <img class="img-fluid" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOLlvYWizMq5OynqCP5xENyWhnfHIPff_4Bmk3lrZqGohkU9M_Cw" alt>
+                <figcaption class="item-desc">Title</figcaption>
+            </figure>
+            <figure class="col-6 col-sm-4 col-md-3 filtr-item" data-category="1, 2">
+                <img class="img-fluid" src="http://www.targel.com.tw/doc/s_product/bagel_09.jpg" alt>
+                <figcaption class="item-desc">Title</figcaption>
+            </figure>
+            <figure class="col-6 col-sm-4 col-md-3 filtr-item" data-category="1, 3">
+                <img class="img-fluid" src="http://placehold.it/350/250" alt>
+                <figcaption class="item-desc">Title</figcaption>
+            </figure>
+            <figure class="col-6 col-sm-4 col-md-3 filtr-item" data-category="2, 3">
+                <img class="img-fluid" src="http://placehold.it/350/250" alt>
+                <figcaption class="item-desc">Title</figcaption>
+            </figure>
+            <figure class="col-6 col-sm-4 col-md-3 filtr-item" data-category="1, 3">
+                <img class="img-fluid" src="http://placehold.it/350/250" alt>
+                <figcaption class="item-desc">Title</figcaption>
+            </figure>
+            <figure class="col-6 col-sm-4 col-md-3 filtr-item" data-category="1, 2">
+                <img class="img-fluid" src="http://placehold.it/350/250" alt>
+                <figcaption class="item-desc">Title</figcaption>
+            </figure>
+        </div>
+
+
+    </div>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/filterizr/1.2.5/jquery.filterizr.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/js/swiper.min.js"></script>
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+
+    <script>
+        jQuery(window).load(function () {
+
+            var $filterizr = $('.filterizr__elements');
+            if ($filterizr.length) {
+                var $filterizrControls = $('.filterizr__controls');
+                $filterizr.filterizr();
+                $filterizrControls.children('li').click(function () {
+                    $filterizrControls.find('li.active').removeClass('active');
+                    $(this).addClass('active');
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>
