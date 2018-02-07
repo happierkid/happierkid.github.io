@@ -515,10 +515,14 @@
             font-size: 16px;        
         }
         .row .about_B_R{
-            padding: 100px;
+            width: 80%;
         }
         .about_F{
             margin: auto;
+        }
+        .about_B_R{
+            margin-left: auto;
+            margin-right: auto;
         }
         .footer{
             text-align: center;
@@ -598,6 +602,15 @@
                 background-image: url("../img/hover3-1.jpg");
                 background-position: 90% 50%;
             }
+            .about_F{
+                display: none;
+            }
+            .reviews .row .word{
+                padding: 0;
+            }
+            .row_product_word{
+                padding: 0
+            }
 
         }
 
@@ -666,5 +679,8 @@
             }
             .boxaaa .swiper-container {
                 height: 50vh;
+            }
+            .about_B_R .word{
+                width: 100%;
             }
         }
