@@ -619,9 +619,7 @@
                 display: static;
             }
 
-            .filtr-item img {
-                width: 50%;
-            }
+
             .head_logo{
                 display: block;
             }
@@ -638,7 +636,6 @@
             }
             .word_child{
                 font-size: 8pt;
-                max-width: 50%;
             }
             .about_F{
                 margin: 0;
@@ -659,8 +656,7 @@
 				margin: 0 auto;
 			}
 			.filtr-item {
-				width: 46%;
-				padding: 1%;
+				width: 50%
             }
             .swiper-slide {
                 background-position: center;

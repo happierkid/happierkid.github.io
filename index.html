@@ -191,46 +191,46 @@
             </ul>
         </div>
 
-            <div class="dowe_container">
-                <div class="dowebok">
-                    <div class="row">
-                        <div class="filtr-item col-xs-6 col-sm-4 col-md-3" data-category="1">
-                            <img src="../img/brush01-01.jpg" alt="">
-                            <div class="word_child">【強硬馬毛 全色系】</div>
-                        </div>
-                        <div class="filtr-item col-xs-6 col-sm-4 col-md-3" data-category="2">
-                            <img src="../img/radish.jpg" alt="">
-                            <div class="word_child">【柔軟 胡蘿蔔】</div>
-                        </div>
-                        <div class="filtr-item col-xs-6 col-sm-4 col-md-3" data-category="1">
-                            <img src="../img/brush01-02.jpg" alt="">
-                            <div class="word_child">【適中軟度 漸層】</div>
-                        </div>
-                        <div class="filtr-item col-xs-6 col-sm-4 col-md-3" data-category="3">
-                            <img src="../img/correction01-01.jpg" alt="">
-                            <div class="word_child">【外長內短ㄩ型】</div>
-                        </div>
-                        <div class="filtr-item col-xs-6 col-sm-4 col-md-3" data-category="1">
-                            <img src="../img/brush02-02.jpg" alt="">
-                            <div class="word_child">【適中軟度 雙色】</div>
-                        </div>
-                        <div class="filtr-item col-xs-6 col-sm-4 col-md-3" data-category="2">
-                            <img src="../img/chili.jpg" alt="">
-                            <div class="word_child">【柔軟 小辣椒】</div>
-                        </div>
-                        <div class="filtr-item col-xs-6 col-sm-4 col-md-3" data-category="1">
-                            <img src="../img/brush03-03.jpg" alt="">
-                            <div class="word_child">【適中軟度 叁色】</div>
-                        </div>
-                        <div class="filtr-item col-xs-6 col-sm-4 col-md-3" data-category="2">
-                            <img src="../img/eggplant.jpg" alt="">
-                            <div class="word_child">【柔軟 紫茄子】</div>
-                        </div>
-                    </div>
+        <div class="dowe_container ">
+            <div class="dowebok ">
+                <div class="filtr-item col-xs-6 col-sm-4 col-md-3 " data-category="1">
+                    <img src="../img/brush01-01.jpg" alt="">
+                    <div class="word_child">【強硬馬毛 全色系】</div>
+                </div>
+                <div class="filtr-item col-xs-6 col-sm-4 col-md-3" data-category="2">
+                    <img src="../img/radish.jpg" alt="">
+                    <div class="word_child">【柔軟 胡蘿蔔】</div>
+                </div>
+                <div class="filtr-item col-xs-6 col-sm-4 col-md-3" data-category="1">
+                    <img src="../img/brush01-02.jpg" alt="">
+                    <div class="word_child">【適中軟度 漸層】</div>
+                </div>
+                <div class="filtr-item col-xs-6 col-sm-4 col-md-3" data-category="3">
+                    <img src="../img/correction01-01.jpg" alt="">
+                    <div class="word_child">【外長內短ㄩ型】</div>
+                </div>
+                <div class="filtr-item col-xs-6 col-sm-4 col-md-3" data-category="1">
+                    <img src="../img/brush02-02.jpg" alt="">
+                    <div class="word_child">【適中軟度 雙色】</div>
+                </div>
+                <div class="filtr-item col-xs-6 col-sm-4 col-md-3" data-category="2">
+                    <img src="../img/chili.jpg" alt="">
+                    <div class="word_child">【柔軟 小辣椒】</div>
+                </div>
+                <div class="filtr-item col-xs-6 col-sm-4 col-md-3" data-category="1">
+                    <img src="../img/brush03-03.jpg" alt="">
+                    <div class="word_child">【適中軟度 叁色】</div>
+                </div>
+                <div class="filtr-item col-xs-6 col-sm-4 col-md-3" data-category="2">
+                    <img src="../img/eggplant.jpg" alt="">
+                    <div class="word_child">【柔軟 紫茄子】</div>
                 </div>
             </div>
+        </div>
+
+
     </div>
-    
+
     <!-- product -->
 
     <!-- story -->
@@ -357,8 +357,9 @@
     </div>
     <!-- footer -->
 
-    <script src="js/jquery-3.3.1.min.js"></script>
-    
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+        crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
@@ -452,6 +453,21 @@
             });
         });
     </script>
+
+    <!-- <script>
+        jQuery(window).load(function () {
+
+            var $filterizr = $('.filterizr__elements');
+            if ($filterizr.length) {
+                var $filterizrControls = $('.filterizr__controls');
+                $filterizr.filterizr();
+                $filterizrControls.children('li').click(function () {
+                    $filterizrControls.find('li.active').removeClass('active');
+                    $(this).addClass('active');
+                });
+            }
+        });
+    </script> -->
     <!-- Product -->
 
     <!-- auto type -->
